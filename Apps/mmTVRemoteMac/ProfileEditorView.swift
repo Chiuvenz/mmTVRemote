@@ -202,6 +202,7 @@ private struct ActionPreset: Identifiable {
         .init(id: "space", title: "键盘：空格", action: .keyStroke(KeyStroke(MacKeyCode.space))),
         .init(id: "dictation", title: "macOS 系统听写", action: .systemDictation),
         .init(id: "home", title: "键盘：Home", action: .keyStroke(KeyStroke(MacKeyCode.home))),
+        .init(id: "menu", title: "键盘：F2（mmTV 菜单）", action: .keyStroke(KeyStroke(MacKeyCode.f2))),
         .init(id: "back", title: "浏览器返回", action: .keyStroke(KeyStroke(MacKeyCode.leftBracket, modifiers: .command))),
         .init(id: "volume-up", title: "系统音量加", action: .systemVolume(delta: 0.0625)),
         .init(id: "volume-down", title: "系统音量减", action: .systemVolume(delta: -0.0625)),

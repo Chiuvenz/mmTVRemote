@@ -36,11 +36,23 @@ func defaultFallback() {
     #expect(resolver.resolve(bundleIdentifier: nil).id == "default")
 }
 
-@Test("mmTV Profile 由原应用读取 HID，全局服务不重复执行")
-func mmTVOwnsRawHID() {
-    for button in RemoteButton.allCases {
-        #expect(BuiltInProfiles.mmTV.action(for: button) == .none)
-    }
+@Test("mmTV Profile 注入标准按键并由 Remote 独占 HID")
+func mmTVProfileKeyboardInjection() {
+    let profile = BuiltInProfiles.mmTV
+    #expect(profile.action(for: .up) == .keyStroke(KeyStroke(MacKeyCode.up)))
+    #expect(profile.action(for: .down) == .keyStroke(KeyStroke(MacKeyCode.down)))
+    #expect(profile.action(for: .left) == .keyStroke(KeyStroke(MacKeyCode.left)))
+    #expect(profile.action(for: .right) == .keyStroke(KeyStroke(MacKeyCode.right)))
+    #expect(profile.action(for: .select) == .keyStroke(KeyStroke(MacKeyCode.returnKey)))
+    #expect(profile.action(for: .back) == .keyStroke(KeyStroke(MacKeyCode.escape)))
+    #expect(profile.action(for: .home) == .keyStroke(KeyStroke(MacKeyCode.home)))
+    #expect(profile.action(for: .tv) == .keyStroke(KeyStroke(MacKeyCode.home)))
+    #expect(profile.action(for: .menu) == .keyStroke(KeyStroke(MacKeyCode.f2)))
+    #expect(profile.action(for: .volumeUp) == .systemVolume(delta: 0.0625))
+    #expect(profile.action(for: .volumeDown) == .systemVolume(delta: -0.0625))
+    #expect(profile.action(for: .voice) == .none)
+    #expect(profile.action(for: .power) == .none)
+    #expect(!profile.requiresNativePassThrough)
 }
 
 @Test("包含透传动作的 Profile 会声明原始事件需求")

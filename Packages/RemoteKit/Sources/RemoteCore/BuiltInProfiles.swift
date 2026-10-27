@@ -10,12 +10,17 @@ public enum BuiltInProfiles {
         bindings: standardBindings()
     )
 
-    /// mmTV owns the raw HID device itself. The global service must stay silent to avoid duplicates.
+    /// mmTV consumes injected keyboard events and handles page focus itself.
+    /// Physical HID ownership stays in mmTV Remote to avoid double-firing.
     public static let mmTV = AppProfile(
         id: "mmtv",
         name: "mmTV",
         bundleIdentifiers: ["com.mmtv.mac"],
-        bindings: Dictionary(uniqueKeysWithValues: RemoteButton.allCases.map { ($0, .none) })
+        bindings: merging(standardBindings(), with: [
+            .menu: .keyStroke(KeyStroke(MacKeyCode.f2)),
+            .tv: .keyStroke(KeyStroke(MacKeyCode.home)),
+            .voice: .none,
+        ])
     )
 
     public static let iina = AppProfile(

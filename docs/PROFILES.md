@@ -35,6 +35,20 @@
 }
 ```
 
+## 内置 mmTV Profile
+
+`com.mmtv.mac` 使用键盘注入，不再把 HID 交给 mmTV 直读：
+
+| 按键 | 动作 |
+|---|---|
+| 方向 / 确认 / 返回 / Home | 方向键、回车、Esc、Home |
+| 菜单 | F2（mmTV 打开／关闭设置） |
+| TV | Home（已在 mmTV 前台时回主页） |
+| 音量 | 系统音量加减 |
+| 语音 | 交给全局语音提供商；Profile 内为 `none` |
+
+若本地曾保存同 Bundle ID 的用户 Profile，会覆盖内置映射；验收前可在控制台对该应用点“恢复默认”。
+
 ## 动作类型
 
 - `passThrough`：不注入事件，让 macOS 原始按键直接到达应用。

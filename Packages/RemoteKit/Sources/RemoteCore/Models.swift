@@ -324,6 +324,7 @@ public enum MacKeyCode {
     public static let l: UInt16 = 37
     public static let o: UInt16 = 31
     public static let home: UInt16 = 115
+    public static let f2: UInt16 = 120
     public static let up: UInt16 = 126
     public static let down: UInt16 = 125
     public static let left: UInt16 = 123
