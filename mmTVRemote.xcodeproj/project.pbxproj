@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4273A933D40D6A52529118B9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503A2C970C756F6868BAB8CC /* DashboardView.swift */; };
+		664F72B95B6653B66D97BC50 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBA3F0DAE9946B931077BA /* AppModel.swift */; };
+		9224D30392C5F2FD349178FE /* mmTVRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4B50DD32D757EFCC6D0EA9 /* mmTVRemoteApp.swift */; };
+		AB493843B160A744FABC654F /* RemoteCore in Frameworks */ = {isa = PBXBuildFile; productRef = E0ECB516E4C41B2253FBDF93 /* RemoteCore */; };
+		BC0E0078B25D55F9DEC3761B /* MenuBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57229CA0FB1FE0C362D48FAC /* MenuBarIcon.swift */; };
+		C3FB6E3EFEC2224F6E50A77D /* StatusMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44425F12D93B5D33875B73B /* StatusMenuView.swift */; };
+		D7C041869D2350026770EF09 /* ProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D445B5DBFD8402FAE15732 /* ProfileEditorView.swift */; };
+		F39D6EEC2FAD83F31361A1C8 /* ProductComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDFCAB5CDA6B70E7728FBE /* ProductComponents.swift */; };
+		F454450BB3961A9D73F0C7E8 /* RemoteRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 01136A7325A9668CAF81A34F /* RemoteRuntime */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46D445B5DBFD8402FAE15732 /* ProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorView.swift; sourceTree = "<group>"; };
+		503A2C970C756F6868BAB8CC /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		56CDFCAB5CDA6B70E7728FBE /* ProductComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductComponents.swift; sourceTree = "<group>"; };
+		57229CA0FB1FE0C362D48FAC /* MenuBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIcon.swift; sourceTree = "<group>"; };
+		7535CCF2A78AFF992964E466 /* mmTVRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmTVRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44425F12D93B5D33875B73B /* StatusMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuView.swift; sourceTree = "<group>"; };
+		DBB4402808AA54CA85B047E5 /* RemoteKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RemoteKit; path = Packages/RemoteKit; sourceTree = SOURCE_ROOT; };
+		F3BBA3F0DAE9946B931077BA /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		FE4B50DD32D757EFCC6D0EA9 /* mmTVRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmTVRemoteApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6C590A11D621C44C8A024B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB493843B160A744FABC654F /* RemoteCore in Frameworks */,
+				F454450BB3961A9D73F0C7E8 /* RemoteRuntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44083B4A6F024B2BA62BC434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7535CCF2A78AFF992964E466 /* mmTVRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BB42679EDBABBB923A1945A /* mmTVRemoteMac */ = {
+			isa = PBXGroup;
+			children = (
+				F3BBA3F0DAE9946B931077BA /* AppModel.swift */,
+				503A2C970C756F6868BAB8CC /* DashboardView.swift */,
+				57229CA0FB1FE0C362D48FAC /* MenuBarIcon.swift */,
+				FE4B50DD32D757EFCC6D0EA9 /* mmTVRemoteApp.swift */,
+				56CDFCAB5CDA6B70E7728FBE /* ProductComponents.swift */,
+				46D445B5DBFD8402FAE15732 /* ProfileEditorView.swift */,
+				A44425F12D93B5D33875B73B /* StatusMenuView.swift */,
+			);
+			name = mmTVRemoteMac;
+			path = Apps/mmTVRemoteMac;
+			sourceTree = "<group>";
+		};
+		88CE5D89BDB5B414ECABAF62 = {
+			isa = PBXGroup;
+			children = (
+				4BB42679EDBABBB923A1945A /* mmTVRemoteMac */,
+				DEE6A7F6BE496537DAEDB09E /* Packages */,
+				44083B4A6F024B2BA62BC434 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEE6A7F6BE496537DAEDB09E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DBB4402808AA54CA85B047E5 /* RemoteKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E015F704E6BEA1518250AEA7 /* mmTVRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CECFAAF7E13F9655345B935 /* Build configuration list for PBXNativeTarget "mmTVRemote" */;
+			buildPhases = (
+				E8A8B1CAD4A56179FC455F9C /* Sources */,
+				F6C590A11D621C44C8A024B1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mmTVRemote;
+			packageProductDependencies = (
+				E0ECB516E4C41B2253FBDF93 /* RemoteCore */,
+				01136A7325A9668CAF81A34F /* RemoteRuntime */,
+			);
+			productName = mmTVRemote;
+			productReference = 7535CCF2A78AFF992964E466 /* mmTVRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FB3BBC89BE1F321AD9D478D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E015F704E6BEA1518250AEA7 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC4FD9A9D250E28A8F752C73 /* Build configuration list for PBXProject "mmTVRemote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 88CE5D89BDB5B414ECABAF62;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				75368E1048259905A6017EBC /* XCLocalSwiftPackageReference "Packages/RemoteKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 44083B4A6F024B2BA62BC434 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E015F704E6BEA1518250AEA7 /* mmTVRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8A8B1CAD4A56179FC455F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664F72B95B6653B66D97BC50 /* AppModel.swift in Sources */,
+				4273A933D40D6A52529118B9 /* DashboardView.swift in Sources */,
+				BC0E0078B25D55F9DEC3761B /* MenuBarIcon.swift in Sources */,
+				F39D6EEC2FAD83F31361A1C8 /* ProductComponents.swift in Sources */,
+				D7C041869D2350026770EF09 /* ProfileEditorView.swift in Sources */,
+				C3FB6E3EFEC2224F6E50A77D /* StatusMenuView.swift in Sources */,
+				9224D30392C5F2FD349178FE /* mmTVRemoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03705848E783E6D6F01C933D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		129A60B13A213A7F8ADDA454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "mmTV Remote";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "读取已配对遥控器的按键，用于控制当前 Mac 应用。";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmtv.remote;
+				PRODUCT_NAME = "mmTV Remote";
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
+		};
+		6F8C0AA3E2AC47EC89214781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "mmTV Remote";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "读取已配对遥控器的按键，用于控制当前 Mac 应用。";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.3.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmtv.remote;
+				PRODUCT_NAME = "mmTV Remote";
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
+		};
+		AB302D27B437DA10500462E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CECFAAF7E13F9655345B935 /* Build configuration list for PBXNativeTarget "mmTVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				129A60B13A213A7F8ADDA454 /* Debug */,
+				6F8C0AA3E2AC47EC89214781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC4FD9A9D250E28A8F752C73 /* Build configuration list for PBXProject "mmTVRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB302D27B437DA10500462E8 /* Debug */,
+				03705848E783E6D6F01C933D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		75368E1048259905A6017EBC /* XCLocalSwiftPackageReference "Packages/RemoteKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RemoteKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01136A7325A9668CAF81A34F /* RemoteRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RemoteRuntime;
+		};
+		E0ECB516E4C41B2253FBDF93 /* RemoteCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RemoteCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1FB3BBC89BE1F321AD9D478D /* Project object */;
+}
