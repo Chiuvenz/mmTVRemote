@@ -1,6 +1,6 @@
 # 当前状态
 
-更新日期：2026-10-27。
+更新日期：2026-10-28。
 
 ## V0.3 已完成
 
@@ -30,15 +30,16 @@
 - 当前 MacBook 实机识别 RC003 为已连接。
 - 前台应用从 ChatGPT 切换到 Finder 后，Profile 自动切换为 Finder。
 
-## mmTV 所有权切换（开发中）
+## mmTV 所有权切换（代码侧已完成）
 
-- 内置 mmTV Profile 已改为键盘注入：方向／确认／返回／Home／F2 菜单、音量由 Remote 调整，不再全部 `none`。
-- 需要与 mmTV 同步删除其 `XiaomiRemoteHID` 直连后再做实体回归，避免双触发。
-- 若本机存在覆盖 `com.mmtv.mac` 的用户 Profile，验收前请恢复默认。
+- 内置 mmTV Profile 为键盘注入：方向／确认／返回／Home／F2 菜单；音量由 Remote 调整（不再整表 `none`）。
+- mmTV 已删除 `XiaomiRemoteHID` 直连、输入监控授权 UI 与相关 Info.plist 说明；静态与进程检查确认 HID 仅由 Remote 持有。
+- 若本机存在覆盖 `com.mmtv.mac` 的用户 Profile，实体验收前请在控制台「恢复默认」。
+- **仍待人工**：mmTV 前台实体键回归（每键只触发一次）、Typeless F20、HDMI 音量降级。Mac mini 重建 Remote 需 Apple Development 身份（脚本不回退 ad-hoc）。
 
 ## 尚需人工验收
 
 - mmTV 前台：方向、确认、返回、菜单开关设置、Home 回主页、音量与 TV 键；确认只触发一次。
 - 在 Typeless 中将 Dictation Mode 快捷键设为 F20，再用实体语音键验收录音开始／结束。
-- 使用实体遥控器逐项体验 Finder、浏览器和 IINA 的动作与长按速度。
+- 使用实体遥控器逐项体验 Finder、浏览器、IINA，以及（可选）`com.mmtv.bilitv` 手感。
 - Mac mini 安装后的 HDMI 音量降级行为。

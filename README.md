@@ -33,7 +33,9 @@ mmTV Remote 不要求启动 mmTV。它可以安装在 MacBook 或 Mac mini 上�
 
 ## 当前状态
 
-V0.3 在 V0.2 的设备级按键接管、可视化 Profile 和菜单栏服务上，新增了全局语音输入通道。语音键可切换为 Typeless、macOS 系统听写或关闭；Typeless 模式会保留遥控器中继后的真实硬件 F20 事件。Release 构建位于 `dist/mmTVRemote.app`。
+营销版 **V0.3.1**。在 V0.2 的设备级按键接管、可视化 Profile 和菜单栏服务上，V0.3 增加了全局语音输入通道；随后内置 **mmTV Profile 改为键盘注入**（方向／确认／返回／Home／F2），与 [mmTV](https://github.com/Chiuvenz/mmTV) 删除 HID 直连对齐。语音键可切换为 Typeless、macOS 系统听写或关闭；Typeless 模式会保留遥控器中继后的真实硬件 F20 事件。Release 构建位于 `dist/mmTVRemote.app`。
+
+详细验收与待办见 [docs/STATUS.md](docs/STATUS.md)。实体 mmTV／电视回归仍待人工；第三方视频适配器在 [mmTVAdapters](https://github.com/Chiuvenz/mmTVAdapters)，按前台 Bundle ID 配 Profile 即可。
 
 Typeless 还需在其设置中将 Dictation Mode 快捷键设为 `F20`。mmTV Remote 会在控制台检查并显示该状态，但不会直接改写 Typeless 的私有配置文件。
 
